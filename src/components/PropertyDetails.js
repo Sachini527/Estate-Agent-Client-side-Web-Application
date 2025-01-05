@@ -1,4 +1,3 @@
-// PropertyDetails.js
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
@@ -30,10 +29,32 @@ const PropertyDetails = ({ favorites, onAddToFavorites, onRemoveFavorite }) => {
   const isFavorite = favorites.some(fav => fav.id === property.id);
 
   // Prepare images for the gallery
-  const images = Array.from({ length: 6 }, (_, i) => ({
-    original: `${property.picture.replace('pic1small', `pic${i + 1}`)}`,
-    thumbnail: `${property.picture.replace('pic1small', `pic${i + 1}small`)}`
-  }));
+  const images = [
+    {
+      original: `/images/properties/${property.id}/main.jpg`,
+      thumbnail: `/images/properties/${property.id}/main-thumb.jpg`,
+    },
+    {
+      original: `/images/properties/${property.id}/living.jpg`,
+      thumbnail: `/images/properties/${property.id}/living-thumb.jpg`,
+    },
+    {
+      original: `/images/properties/${property.id}/kitchen.jpg`,
+      thumbnail: `/images/properties/${property.id}/kitchen-thumb.jpg`,
+    },
+    {
+      original: `/images/properties/${property.id}/bedroom1.jpg`,
+      thumbnail: `/images/properties/${property.id}/bedroom1-thumb.jpg`,
+    },
+    {
+      original: `/images/properties/${property.id}/bedroom2.jpg`,
+      thumbnail: `/images/properties/${property.id}/bedroom2-thumb.jpg`,
+    },
+    {
+      original: `/images/properties/${property.id}/bathroom.jpg`,
+      thumbnail: `/images/properties/${property.id}/bathroom-thumb.jpg`,
+    }
+  ];
 
   const handleToggleFavorite = () => {
     if (isFavorite) {
@@ -104,7 +125,7 @@ const PropertyDetails = ({ favorites, onAddToFavorites, onRemoveFavorite }) => {
         <TabPanel>
           <div className="floorplan-content">
             <img 
-              src={`/images/${property.id}-floorplan.jpg`}
+              src={`/images/properties/${property.id}/floorplan.jpg`}
               alt="Floor Plan"
               className="floorplan-image"
             />
@@ -113,13 +134,14 @@ const PropertyDetails = ({ favorites, onAddToFavorites, onRemoveFavorite }) => {
 
         <TabPanel>
           <div className="map-content">
+            {/* Using OpenStreetMap instead of Google Maps as it doesn't require an API key */}
             <iframe
               title="Property Location"
               width="100%"
               height="450"
               frameBorder="0"
-              src={`https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=${encodeURIComponent(property.location)}`}
-              allowFullScreen
+              scrolling="no"
+              src={`https://www.openstreetmap.org/export/embed.html?bbox=${property.coordinates.longitude-0.01}%2C${property.coordinates.latitude-0.01}%2C${property.coordinates.longitude+0.01}%2C${property.coordinates.latitude+0.01}&layer=mapnik&marker=${property.coordinates.latitude}%2C${property.coordinates.longitude}`}
             />
           </div>
         </TabPanel>
