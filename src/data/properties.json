@@ -1,0 +1,109 @@
+{
+    "properties": [
+      {
+        "id": "prop1",
+        "type": "House",
+        "bedrooms": 3,
+        "price": 750000,
+        "tenure": "Freehold",
+        "description": "Attractive three bedroom semi-detached family home situated within 0.5 miles of Petts Wood station with fast trains to London and within easy walking distance of local shops, schools, bus routes and National Trust woodland. The property comprises; two receptions, fitted 18'9 x 10'1 kitchen/breakfast room and conservatory...",
+        "location": "Petts Wood Road, Petts Wood, Orpington BR5",
+        "picture": "images/prop1pic1small.jpg",
+        "added": {
+          "month": "October",
+          "day": 12,
+          "year": 2024
+        }
+      },
+      {
+        "id": "prop2",
+        "type": "Flat",
+        "bedrooms": 2,
+        "price": 399995,
+        "tenure": "Freehold",
+        "description": "Presented in excellent decorative order throughout is this two double bedroom, two bathroom, garden flat...",
+        "location": "Crofton Road Orpington BR6",
+        "picture": "images/prop2pic1small.jpg",
+        "added": {
+          "month": "September",
+          "day": 14,
+          "year": 2024
+        }
+      },
+      {
+        "id": "prop3",
+        "type": "House",
+        "bedrooms": 4,
+        "price": 925000,
+        "tenure": "Freehold",
+        "description": "Stunning four bedroom detached house with modern amenities...",
+        "location": "Chislehurst Road, Bromley BR1",
+        "picture": "images/prop3pic1small.jpg",
+        "added": {
+          "month": "November",
+          "day": 5,
+          "year": 2024
+        }
+      },
+      {
+        "id": "prop4",
+        "type": "Flat",
+        "bedrooms": 1,
+        "price": 275000,
+        "tenure": "Leasehold",
+        "description": "Modern one bedroom apartment in the heart of the city...",
+        "location": "High Street, Bromley BR1",
+        "picture": "images/prop4pic1small.jpg",
+        "added": {
+          "month": "December",
+          "day": 1,
+          "year": 2024
+        }
+      },
+      {
+        "id": "prop5",
+        "type": "House",
+        "bedrooms": 5,
+        "price": 1250000,
+        "tenure": "Freehold",
+        "description": "Luxurious five bedroom detached house with extensive gardens...",
+        "location": "Warren Road, Hayes BR2",
+        "picture": "images/prop5pic1small.jpg",
+        "added": {
+          "month": "November",
+          "day": 20,
+          "year": 2024
+        }
+      },
+      {
+        "id": "prop6",
+        "type": "Flat",
+        "bedrooms": 3,
+        "price": 550000,
+        "tenure": "Leasehold",
+        "description": "Spacious three bedroom penthouse apartment with panoramic views...",
+        "location": "Station Square, Petts Wood BR5",
+        "picture": "images/prop6pic1small.jpg",
+        "added": {
+          "month": "October",
+          "day": 25,
+          "year": 2024
+        }
+      },
+      {
+        "id": "prop7",
+        "type": "House",
+        "bedrooms": 2,
+        "price": 425000,
+        "tenure": "Freehold",
+        "description": "Charming two bedroom cottage with period features...",
+        "location": "High Street, Chislehurst BR7",
+        "picture": "images/prop7pic1small.jpg",
+        "added": {
+          "month": "December",
+          "day": 10,
+          "year": 2024
+        }
+      }
+    ]
+  }
