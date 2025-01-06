@@ -4,7 +4,9 @@ import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
 import './SearchForm.css';
 
+// SearchForm component to handle search criteria input
 const SearchForm = ({ onSearch }) => {
+  // State to hold form data
   const [formData, setFormData] = useState({
     type: '',
     minPrice: '',
@@ -15,15 +17,17 @@ const SearchForm = ({ onSearch }) => {
     dateAfter: null
   });
 
+   // Options for property type dropdown
   const propertyTypes = [
     { value: 'any', label: 'Any' },
     { value: 'House', label: 'House' },
     { value: 'Flat', label: 'Flat' }
   ];
 
+  // Function to handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
-    onSearch(formData);
+    onSearch(formData); // Call the onSearch function passed as a prop with form data
   };
 
   const handleChange = (e) => {

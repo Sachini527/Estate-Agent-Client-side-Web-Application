@@ -3,7 +3,9 @@ import { Link } from 'react-router-dom';
 import { useDrag } from 'react-dnd';
 import './PropertyList.css';
 
+// PropertyCard component to display individual property details
 const PropertyCard = ({ property, onAddToFavorites }) => {
+  // useDrag hook to make the property card draggable
   const [{ isDragging }, drag] = useDrag(() => ({
     type: 'property',
     item: property,
@@ -38,12 +40,14 @@ const PropertyCard = ({ property, onAddToFavorites }) => {
   );
 };
 
+// PropertyList component to display a list of properties
 const PropertyList = ({ properties, onAddToFavorites }) => {
   return (
     <div className="property-list">
       {properties.length === 0 ? (
         <p className="no-results">No properties found matching your criteria.</p>
       ) : (
+        // Map through the properties and render a PropertyCard for each
         properties.map(property => (
           <PropertyCard
             key={property.id}

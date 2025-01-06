@@ -1,11 +1,12 @@
-// App.js
+// Code for the main App component that renders the SearchPage and PropertyDetails components
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
 import SearchPage from './components/SearchPage';
 import PropertyDetails from './components/PropertyDetails';
 import './App.css';
+import SavedProperties from './components/SavedProperties';
 
 function App() {
   const [favorites, setFavorites] = useState(() => {
@@ -30,7 +31,7 @@ function App() {
   };
 
   const handleRemoveFavorite = (propertyId) => {
-    setFavorites(prevFavorites => 
+    setFavorites(prevFavorites =>
       prevFavorites.filter(property => property.id !== propertyId)
     );
   };
@@ -47,33 +48,42 @@ function App() {
             <h1>Estate Agent Property Search</h1>
             <nav className="app-nav">
               <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/saved">Saved Properties</a></li>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/saved">Saved Properties</Link></li>
               </ul>
             </nav>
           </header>
           <main className="app-main">
             <Routes>
-              <Route 
-                path="/" 
+              <Route
+                path="/"
                 element={
-                  <SearchPage 
+                  <SearchPage
                     favorites={favorites}
                     onAddToFavorites={handleAddToFavorites}
                     onRemoveFavorite={handleRemoveFavorite}
                     onClearFavorites={handleClearFavorites}
                   />
-                } 
+                }
               />
-              <Route 
-                path="/property/:id" 
+              <Route
+                path="/property/:id"
                 element={
-                  <PropertyDetails 
+                  <PropertyDetails
                     favorites={favorites}
                     onAddToFavorites={handleAddToFavorites}
                     onRemoveFavorite={handleRemoveFavorite}
                   />
-                } 
+                }
+              />
+              <Route
+                path="/saved"
+                element={
+                  <SavedProperties
+                    favorites={favorites}
+                    onRemoveFavorite={handleRemoveFavorite}
+                  />
+                }
               />
             </Routes>
           </main>

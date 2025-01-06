@@ -7,12 +7,8 @@
       "price": 750000,
       "tenure": "Freehold",
       "description": "Attractive three bedroom semi-detached family home situated within 0.5 miles of Petts Wood station with fast trains to London and within easy walking distance of local shops, schools, bus routes and National Trust woodland. The property comprises; two receptions, fitted 18'9 x 10'1 kitchen/breakfast room and conservatory...",
-      "location": "Petts Wood Road, Petts Wood, Orpington BR5",
+      "location": "12 Woodland Way, Petts Wood, Orpington BR5 1NB, UK",
       "picture": "images/prop1pic1small.jpg",
-      "coordinates": {
-        "latitude": 51.3897,
-        "longitude": 0.0745
-      },
       "images": {
         "main": "/images/properties/prop1/main.jpg",
         "mainThumb": "/images/properties/prop1/main-thumb.jpg",
@@ -41,12 +37,8 @@
       "price": 399995,
       "tenure": "Freehold",
       "description": "Presented in excellent decorative order throughout is this two double bedroom, two bathroom, garden flat...",
-      "location": "Crofton Road Orpington BR6",
+      "location": "45 Crofton Road, Orpington BR6 8AE, UK",
       "picture": "images/prop2pic1small.jpg",
-      "coordinates": {
-        "latitude": 51.3729,
-        "longitude": 0.0899
-      },
       "images": {
         "main": "/images/properties/prop2/main.jpg",
         "mainThumb": "/images/properties/prop2/main-thumb.jpg",
@@ -75,12 +67,8 @@
       "price": 925000,
       "tenure": "Freehold",
       "description": "Stunning four bedroom detached house with modern amenities...",
-      "location": "Chislehurst Road, Bromley BR1",
+      "location": "157 Chislehurst Road, Bromley BR1 4JJ, UK",
       "picture": "images/prop3pic1small.jpg",
-      "coordinates": {
-        "latitude": 51.3422,
-        "longitude": 0.0700
-      },
       "images": {
         "main": "/images/properties/prop3/main.jpg",
         "mainThumb": "/images/properties/prop3/main-thumb.jpg",
@@ -109,12 +97,8 @@
       "price": 275000,
       "tenure": "Leasehold",
       "description": "Modern one bedroom apartment in the heart of the city...",
-      "location": "High Street, Bromley BR1",
+      "location": "85 High Street, Bromley BR1 1JY, UK",
       "picture": "images/prop4pic1small.jpg",
-      "coordinates": {
-        "latitude": 51.2100,
-        "longitude": 0.0655
-      },
       "images": {
         "main": "/images/properties/prop4/main.jpg",
         "mainThumb": "/images/properties/prop4/main-thumb.jpg",
@@ -143,12 +127,8 @@
       "price": 1250000,
       "tenure": "Freehold",
       "description": "Luxurious five bedroom detached house with extensive gardens...",
-      "location": "Warren Road, Hayes BR2",
+      "location": "23 Warren Road, Hayes, Bromley BR2 7AN, UK",
       "picture": "images/prop5pic1small.jpg",
-      "coordinates": {
-        "latitude": 51.4300,
-        "longitude": 0.0755
-      },
       "images": {
         "main": "/images/properties/prop5/main.jpg",
         "mainThumb": "/images/properties/prop5/main-thumb.jpg",
@@ -177,12 +157,8 @@
       "price": 550000,
       "tenure": "Leasehold",
       "description": "Spacious three bedroom penthouse apartment with panoramic views...",
-      "location": "Station Square, Petts Wood BR5",
+      "location": "2 Station Square, Petts Wood, Orpington BR5 1LZ, UK",
       "picture": "images/prop6pic1small.jpg",
-      "coordinates": {
-        "latitude": 51.3321,
-        "longitude": 0.0866
-      },
       "images": {
         "main": "/images/properties/prop6/main.jpg",
         "mainThumb": "/images/properties/prop6/main-thumb.jpg",
@@ -211,12 +187,8 @@
       "price": 425000,
       "tenure": "Freehold",
       "description": "Charming two bedroom cottage with period features...",
-      "location": "High Street, Chislehurst BR7",
+      "location": "42 High Street, Chislehurst BR7 5AQ, UK",
       "picture": "images/prop7pic1small.jpg",
-      "coordinates": {
-        "latitude": 51.4200,
-        "longitude": 0.0900
-      },
       "images": {
         "main": "/images/properties/prop7/main.jpg",
         "mainThumb": "/images/properties/prop7/main-thumb.jpg",

@@ -3,7 +3,9 @@ import { useDrop } from 'react-dnd';
 import { Link } from 'react-router-dom';
 import './FavoritesList.css';
 
+// Component to display a list of favorite properties
 const FavoritesList = ({ favorites, onRemove, onClear, onAddToFavorites }) => {
+  // useDrop hook to make the favorites list a drop target
   const [{ isOver }, drop] = useDrop(() => ({
     accept: 'property',
     drop: (item) => onAddToFavorites(item),
@@ -12,6 +14,7 @@ const FavoritesList = ({ favorites, onRemove, onClear, onAddToFavorites }) => {
     })
   }));
 
+  // Render the favorites list
   return (
     <div ref={drop} className={`favorites-list ${isOver ? 'drag-over' : ''}`}>
       <div className="favorites-header">
