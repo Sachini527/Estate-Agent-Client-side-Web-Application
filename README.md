@@ -1,4 +1,4 @@
-# 🏡 Estate Agent Property Search Application
+# 🏡 Estate Agent Client-side Web Application
 
 A **client-side web application** for an estate agent that enables users to search for properties based on various criteria, view detailed property information, and save favorite properties.
 
